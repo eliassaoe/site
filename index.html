@@ -7,21 +7,21 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <style>
         /* Base styles */
         :root {
-            --primary: #4B56D2;
-            --primary-dark: #3A45B0;
-            --secondary: #9C51E0;
-            --secondary-dark: #7F3CB8;
-            --light-bg: #f5f7ff;
-            --dark-text: #1a1a2e;
-            --body-text: #4a4a68;
-            --light-text: #777;
-            --border-color: #e7e9ed;
+            --primary: #00AB55;
+            --primary-dark: #008F47;
+            --secondary: #6B7280;
+            --secondary-dark: #4B5563;
+            --light-bg: #F5FFFA;
+            --dark-text: #111827;
+            --body-text: #374151;
+            --light-text: #6B7280;
+            --border-color: #E5E7EB;
             --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            --button-shadow: 0 8px 15px rgba(75, 86, 210, 0.15);
+            --button-shadow: 0 8px 15px rgba(0, 171, 85, 0.15);
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
         
@@ -32,7 +32,7 @@
         }
         
         body {
-            font-family: 'Be Vietnam Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             color: var(--body-text);
@@ -41,6 +41,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-font-smoothing: antialiased;
             -o-font-smoothing: antialiased;
+            font-weight: 300;
         }
         
         .container {
@@ -217,7 +218,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: radial-gradient(rgba(75, 86, 210, 0.08) 2px, transparent 2px);
+            background-image: radial-gradient(rgba(0, 171, 85, 0.08) 2px, transparent 2px);
             background-size: 30px 30px;
             opacity: 0.8;
         }
@@ -247,11 +248,11 @@
         .hero-subtitle {
             display: inline-flex;
             align-items: center;
-            background-color: rgba(75, 86, 210, 0.1);
+            background-color: rgba(0, 171, 85, 0.1);
             padding: 10px 18px;
             border-radius: 50px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 10px rgba(75, 86, 210, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 171, 85, 0.1);
         }
         
         .hero-subtitle-text {
@@ -269,7 +270,7 @@
             font-size: 52px;
             line-height: 1.2;
             margin-bottom: 24px;
-            font-weight: 700;
+            font-weight: 600;
             background: linear-gradient(to right, var(--dark-text), #555);
             -webkit-background-clip: text;
             background-clip: text;
@@ -323,8 +324,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(rgba(75, 86, 210, 0.03) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(75, 86, 210, 0.03) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(0, 171, 85, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 171, 85, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
             z-index: 0;
         }
@@ -349,7 +350,7 @@
         .why-choosen-us-widget:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            border-color: rgba(75, 86, 210, 0.2);
+            border-color: rgba(0, 171, 85, 0.2);
         }
         
         .loading-bar {
@@ -378,6 +379,17 @@
             border-radius: 5px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             transition: width 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .section-title-heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
         
         ._1 {
@@ -436,16 +448,7 @@
             margin-bottom: 60px;
         }
         
-        .section-title-heading {
-            font-size: 40px;
-            margin-bottom: 20px;
-            font-weight: 700;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: inline-block;
-        }
+
         
         .service-card-list-2 {
             display: grid;
@@ -475,7 +478,7 @@
         .service-card-2:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            border-color: rgba(75, 86, 210, 0.2);
+            border-color: rgba(0, 171, 85, 0.2);
         }
         
         .service-card-content-2 {
@@ -523,14 +526,14 @@
         }
         
         .testimonial-card {
-            background-color: #f0f4ff;
+            background-color: #f0fff4;
             padding: 30px;
             border-radius: 16px;
             max-width: 700px;
             margin: 30px auto;
             text-align: left;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(75, 86, 210, 0.1);
+            border: 1px solid rgba(0, 171, 85, 0.1);
         }
         
         .testimonial-header {
@@ -551,7 +554,7 @@
             margin-right: 20px;
             font-size: 26px;
             font-weight: bold;
-            box-shadow: 0 5px 15px rgba(75, 86, 210, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 171, 85, 0.2);
         }
         
         .flow-diagram {
@@ -584,14 +587,14 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            box-shadow: 0 10px 25px rgba(75, 86, 210, 0.1);
-            border: 1px solid rgba(75, 86, 210, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 171, 85, 0.1);
+            border: 1px solid rgba(0, 171, 85, 0.1);
             transition: var(--transition);
         }
         
         .flow-step:hover .icon-container {
             background-color: var(--primary);
-            box-shadow: 0 15px 30px rgba(75, 86, 210, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 171, 85, 0.2);
         }
         
         .flow-step:hover .icon-number {
@@ -641,7 +644,7 @@
         }
         
         .benefit-icon {
-            background-color: #e6e9ff;
+            background-color: #e0ffec;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -659,7 +662,7 @@
         .benefit-item:hover .benefit-icon {
             background-color: var(--primary);
             color: white;
-            box-shadow: 0 10px 20px rgba(75, 86, 210, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 171, 85, 0.2);
         }
         
         .benefit-content h4 {
@@ -681,6 +684,11 @@
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             position: relative;
+            border: 1px solid rgba(0, 171, 85, 0.1);px 40px rgba(0, 0, 0, 0.08);
+            position: relative;
+            border: 1px solid rgba(0, 171, 85, 0.1);
+        }px 40px rgba(0, 0, 0, 0.08);
+            position: relative;
             border: 1px solid rgba(75, 86, 210, 0.1);
         }
         
@@ -691,7 +699,7 @@
             right: 0;
             width: 300px;
             height: 100%;
-            background: linear-gradient(135deg, rgba(75, 86, 210, 0.05) 0%, rgba(156, 81, 224, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(0, 171, 85, 0.05) 0%, rgba(107, 114, 128, 0.05) 100%);
             z-index: 0;
             clip-path: polygon(100% 0, 0 0, 100% 100%);
         }
@@ -715,7 +723,7 @@
         .heading-2 {
             font-size: 40px;
             line-height: 1.2;
-            font-weight: 700;
+            font-weight: 600;
             background: linear-gradient(to right, var(--dark-text), #555);
             -webkit-background-clip: text;
             background-clip: text;
@@ -795,6 +803,26 @@
                 gap: 20px;
                 text-align: center;
             }
+            
+            .navbar-menu {
+                display: none !important;
+            }
+            
+            .timeline-item {
+                flex-direction: column !important;
+            }
+            
+            .timeline-year {
+                width: 100% !important;
+                margin-bottom: 10px;
+            }
+            
+            .timeline-content {
+                padding-left: 0 !important;
+                border-left: none !important;
+                padding-top: 15px !important;
+                border-top: 2px solid var(--primary) !important;
+            }
         }
         
         @media (max-width: 767px) {
@@ -849,6 +877,12 @@
             <div class="navbar position-relative">
                 <div class="navbar-wrapper">
                     <a href="#" class="navbar-brand">AI Society Agency</a>
+                    <div class="navbar-menu" style="display: flex; gap: 25px; margin-left: 40px;">
+                        <a href="#services" style="color: var(--dark-text); font-weight: 400;">Solutions</a>
+                        <a href="#demo" style="color: var(--dark-text); font-weight: 400;">Démo</a>
+                        <a href="#history" style="color: var(--dark-text); font-weight: 400;">Notre Histoire</a>
+                        <a href="#contact" style="color: var(--dark-text); font-weight: 400;">Contact</a>
+                    </div>
                     <div class="navbar-button">
                         <a href="https://calendly.com/hamoureliasse/session-offerte-sur-les-agents-ia-clone" target="_blank" class="button primary">
                             <div class="button-area primary">
@@ -1149,6 +1183,87 @@
         </div>
     </section>
 
+    <section id="history" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="section-title-heading">Notre Histoire</h2>
+            </div>
+            
+            <div class="history-container" style="max-width: 850px; margin: 0 auto; background-color: white; border-radius: 16px; padding: 40px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
+                <div class="history-timeline">
+                    <div class="timeline-item" style="display: flex; margin-bottom: 40px;">
+                        <div class="timeline-year" style="flex-shrink: 0; width: 80px; font-weight: 600; color: var(--primary); font-size: 20px;">
+                            2022
+                        </div>
+                        <div class="timeline-content" style="padding-left: 30px; border-left: 2px solid var(--primary);">
+                            <h3 style="font-size: 22px; margin-bottom: 12px; font-weight: 500;">Les Débuts</h3>
+                            <p style="font-size: 16px; line-height: 1.7; margin-bottom: 0;">
+                                AI Society Agency est née de la vision de trois experts en intelligence artificielle et marketing digital. Face à l'explosion des technologies IA conversationnelles, ils ont identifié une opportunité de révolutionner l'acquisition client pour les entreprises. Leur mission : rendre l'IA accessible et efficace pour les équipes commerciales.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" style="display: flex; margin-bottom: 40px;">
+                        <div class="timeline-year" style="flex-shrink: 0; width: 80px; font-weight: 600; color: var(--primary); font-size: 20px;">
+                            2023
+                        </div>
+                        <div class="timeline-content" style="padding-left: 30px; border-left: 2px solid var(--primary);">
+                            <h3 style="font-size: 22px; margin-bottom: 12px; font-weight: 500;">Développement & Premiers Succès</h3>
+                            <p style="font-size: 16px; line-height: 1.7; margin-bottom: 0;">
+                                Après des mois de R&D, nous avons lancé notre premier produit "WhatsApp Converter", qui a immédiatement séduit plusieurs entreprises du secteur immobilier. Cette solution a permis à nos premiers clients d'augmenter leur taux de conversion de 35% en moyenne, validant notre approche et notre technologie.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" style="display: flex; margin-bottom: 40px;">
+                        <div class="timeline-year" style="flex-shrink: 0; width: 80px; font-weight: 600; color: var(--primary); font-size: 20px;">
+                            2024
+                        </div>
+                        <div class="timeline-content" style="padding-left: 30px; border-left: 2px solid var(--primary);">
+                            <h3 style="font-size: 22px; margin-bottom: 12px; font-weight: 500;">Expansion & Innovation</h3>
+                            <p style="font-size: 16px; line-height: 1.7; margin-bottom: 0;">
+                                Fort de notre succès initial, nous avons élargi notre gamme de produits pour couvrir l'ensemble du parcours d'acquisition client. Notre équipe s'est agrandie avec l'arrivée d'experts en NLP et en design conversationnel. Nous avons également obtenu une levée de fonds qui nous a permis d'accélérer notre développement technologique.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" style="display: flex;">
+                        <div class="timeline-year" style="flex-shrink: 0; width: 80px; font-weight: 600; color: var(--primary); font-size: 20px;">
+                            2025
+                        </div>
+                        <div class="timeline-content" style="padding-left: 30px; border-left: 2px solid var(--primary);">
+                            <h3 style="font-size: 22px; margin-bottom: 12px; font-weight: 500;">Aujourd'hui</h3>
+                            <p style="font-size: 16px; line-height: 1.7; margin-bottom: 0;">
+                                AI Society Agency est désormais un acteur reconnu dans le domaine des agents IA pour l'acquisition client. Notre suite complète de solutions aide des entreprises de toutes tailles à automatiser et optimiser leur processus d'acquisition. Notre mission reste inchangée : permettre aux entreprises de se concentrer sur ce qu'elles font de mieux, pendant que nos agents IA s'occupent de la qualification et de la conversion des prospects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-values" style="margin-top: 60px; text-align: center;">
+                    <h3 style="font-size: 24px; margin-bottom: 30px; color: var(--dark-text);">Nos Valeurs</h3>
+                    
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                        <div class="value-item" style="flex: 1; min-width: 180px; max-width: 220px; padding: 20px; border-radius: 10px; background-color: var(--light-bg); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                            <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--primary);">Innovation</h4>
+                            <p style="font-size: 14px; margin: 0;">Nous repoussons constamment les limites de la technologie IA pour offrir des solutions toujours plus performantes.</p>
+                        </div>
+                        
+                        <div class="value-item" style="flex: 1; min-width: 180px; max-width: 220px; padding: 20px; border-radius: 10px; background-color: var(--light-bg); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                            <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--primary);">Excellence</h4>
+                            <p style="font-size: 14px; margin: 0;">Nous nous engageons à offrir des solutions de la plus haute qualité avec un service client irréprochable.</p>
+                        </div>
+                        
+                        <div class="value-item" style="flex: 1; min-width: 180px; max-width: 220px; padding: 20px; border-radius: 10px; background-color: var(--light-bg); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                            <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--primary);">Éthique</h4>
+                            <p style="font-size: 14px; margin: 0;">Nous développons des agents IA responsables qui respectent la vie privée et adoptent une approche centrée sur l'humain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="cta-section">
         <div class="container">
             <div class="cta-wrapper-left position-relative box-shadow">
@@ -1168,8 +1283,6 @@
             </div>
         </div>
     </section>
-
-    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <a href="#" class="navbar-brand">AI Society Agency</a>
